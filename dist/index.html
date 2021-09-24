@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>TaskManagement</title>
+        <link href="src/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    
+    <body >
+        
+        <h1>To - Do App</h1><br>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="main.js"></script>
+
+    
+        <form id="todo" method="post" >
+            
+            <label> Date: </label>
+            <input type="date" id="dot" placeholder="Date of Task" autocomplete="off" required>
+
+            <label> Task: </label>
+            <input type="text" id="taskName" placeholder="Task Name" autocomplete="off" required>
+
+            <label> Task Type: </label>
+            <select id ="taskType" required>
+                <option value="Select">Select</option>
+                <option value="Meeting">Meeting</option>
+                <option value="KT">KT</option>
+                <option value="Others">Others</option>
+            </select>
+
+            <label> Duration: </label>
+            <input type="time" id="duration" placeholder="Duration" autocomplete="off" required>
+            
+            <label> Task Description: </label>
+            <input type = "text" id="description" placeholder="Enter the description" autocomplete="off" required>
+
+            <button type="submit"> <i class="fa fa-plus-square" style="font-size:15px;"> </i>
+            </button>
+
+        </form>
+
+        <div id="res">
+            
+            <table style="width : 100%">
+                
+                <tr>
+                    
+                    <th class="inner">Date</th>
+                    <th class="inner">Task</th>
+                    <th class="inner">Type</th>
+                    <th class="inner">Duration</th>
+                    <th class="inner">Description</th>
+                
+                </tr>
+            
+            </table>
+        
+        </div>
+    
+    </body>
+
+</html>

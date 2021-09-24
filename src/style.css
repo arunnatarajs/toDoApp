@@ -1,0 +1,16 @@
+ h1{
+    text-align: center;
+} 
+
+form {
+  text-align: center;
+  height: 50px;
+}
+
+table,th,td,tr {
+    border:1px solid black;
+}
+
+.inner{
+    width: 20%;
+}
